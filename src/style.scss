@@ -12,6 +12,9 @@ $background-color: #f4f2ef;
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: $background-color;
   color: #333;
