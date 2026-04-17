@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>デカフェコーヒー定期便LP（架空案件）｜ポートフォリオ</title>
+    <meta property="og:title" content="デカフェコーヒー定期便LP" />
+    <meta
+      property="og:description"
+      content="夜でも楽しめるカフェインレスコーヒーのLP"
+    />
+
+    <link rel="icon" href="/favicon.svg" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo">
+          <img src="/assets/icons/logo.svg" alt="Decaf Coffee" />
+        </a>
+
+        <nav class="drawer">
+          <ul class="drawer__list">
+            <li><a href="#service">サービス</a></li>
+            <li><a href="#benefit">特徴</a></li>
+            <li><a href="#pricing">料金</a></li>
+            <li><a href="#testimonials">口コミ</a></li>
+          </ul>
+        </nav>
+        <button class="header__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <section class="hero">
+      <picture>
+        <!-- SP用(幅767px以下)-->
+        <source
+          srcset="/assets/images/hero_sp.png"
+          media="(max-width: 767px)"
+        />
+        <!-- PC用(幅768px以上)-->
+        <img
+          src="/assets/images/hero_pc.png"
+          alt="夜でも楽しめるカフェインレスコーヒー定期便"
+          class="hero-image"
+        />
+      </picture>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          夜でもコーヒーを<br class="sp-only" />我慢しない生活へ
+        </h1>
+        <p class="hero__lead">カフェインレス専門の定期便サービス</p>
+        <div class="hero__cta container">
+          <p class="cta__text">まずは初回から気軽にお試し</p>
+          <a class="btn btn--shadow" href="#">初回900円で試す</a>
+          <div class="cta__note">※いつでも解約OK</div>
+        </div>
+      </div>
+    </section>
+    <section class="problem">
+      <div class="container">
+        <h2 class="section__title problem__title">
+          カフェインを気にせず、<br class="sp-only" />コーヒーを楽しみたい
+        </h2>
+
+        <div class="problem__voices">
+          <div class="problem__voice">
+            <div class="problem__image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/assets/icons/section2/nayami01_sp.svg"
+                />
+                <img
+                  src="/assets/icons/section2/nayami01_pc.svg"
+                  alt="カフェインを気にする女性"
+                  width="200"
+                  height="310"
+                />
+              </picture>
+            </div>
+
+            <div class="problem__text">
+              <p>
+                夜にゆっくりコーヒーを飲みたいけど、カフェインが気になって楽しめない…
+              </p>
+              <p class="problem__meta">(会社員:20代)</p>
+            </div>
+          </div>
+
+          <div class="problem__voice problem__voice--reverse">
+            <div class="problem__image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/assets/icons/section2/nayami02_sp.svg"
+                />
+                <img
+                  src="/assets/icons/section2/nayami02_pc.svg"
+                  alt="カフェインを気にする女性"
+                  width="170"
+                  height="300"
+                />
+              </picture>
+            </div>
+
+            <div class="problem__text">
+              <p>
+                カフェインレスコーヒーの種類は少なくて、毎日飲むには飽きてしまう…
+              </p>
+              <p class="problem__meta">(会社員:30代)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ③ サービス紹介セクション -->
+    <section id="service" class="service">
+      <!-- 見出し・本文 -->
+      <div class="container">
+        <h2 class="section__title service__title">
+          リラックスタイムを彩る、<br class="sp-only" />デカフェコーヒー定期便
+        </h2>
+        <div class="service__points">
+          <ul class="service__list">
+            <li class="service__item">
+              当サービスでは、契約農園直送のカフェインレスコーヒー豆を３種類ご用意
+            </li>
+            <li class="service__item">
+              浅煎り・中深煎り・深煎りの３種類の焙煎で、お好みに合わせて楽しめます
+            </li>
+          </ul>
+        </div>
+        <div class="service__cards">
+          <div class="service__card">
+            <div class="service__image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/assets/images/section3/south-beans_sp.png"
+                />
+                <img
+                  src="/assets/images/section3/africa-beans_pc.png"
+                  alt="コーヒー豆"
+                  class="service-image"
+                />
+              </picture>
+            </div>
+            <div class="service__texts">
+              <h3 class="service__card-title">
+                アフリカ<span class="service__card-sub"
+                  >(ケニア、エチオピアなど)</span
+                >
+              </h3>
+              <p class="service__card-text">ジューシーで華やかな酸味が特徴</p>
+              <p class="service__card-meta">酸味：★★★☆☆<br />コク：★★☆☆☆</p>
+            </div>
+          </div>
+
+          <div class="service__card">
+            <div class="service__image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/assets/images/section3/central-south-beans_sp.png"
+                />
+                <img
+                  src="/assets/images/section3/south-beans_pc.png"
+                  alt="コーヒー豆"
+                  class="service-image"
+                />
+              </picture>
+            </div>
+            <div class="service__texts">
+              <h3 class="service__card-title">
+                南米<span class="service__card-sub"
+                  >(ブラジル、コロンビアなど)</span
+                >
+              </h3>
+              <p class="service__card-text">ジューシーで華やかな酸味が特徴</p>
+              <p class="service__card-meta">酸味：★★★☆☆<br />コク：★★☆☆☆</p>
+            </div>
+          </div>
+
+          <div class="service__card">
+            <div class="service__image">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/assets/images/section3/south-beans_sp.png"
+                />
+                <img
+                  src="/assets/images/section3/central-south-beans_pc.png"
+                  alt="コーヒー豆"
+                  class="service-image"
+                />
+              </picture>
+            </div>
+            <div class="service__texts">
+              <h3 class="service__card-title">
+                中南米<span class="service__card-sub"
+                  >(グアテマラ、コスタリカなど)</span
+                >
+              </h3>
+              <p class="service__card-text">ジューシーで華やかな酸味が特徴</p>
+              <p class="service__card-meta">
+                酸味：★★★☆☆<br />
+                コク：★★☆☆☆
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ メリットセクション -->
+    <section id="benefit" class="benefit">
+      <!-- 見出し・本文 -->
+      <div class="container">
+        <h2 class="section__title benefit__title">
+          カフェインレスでも、<br class="sp-only" />味も香りも妥協なし
+        </h2>
+
+        <ul class="benefit__list">
+          <li class="benefit__item">
+            <p class="benefit__item-title">新鮮さを毎月楽しめる</p>
+            <p class="benefit__item-sub">
+              シーズンごとに異なる豆を楽しめるから、毎月のリラックスタイムが新鮮です
+            </p>
+          </li>
+          <li class="benefit__item">
+            <p class="benefit__item-title">高品質な安心感</p>
+            <p class="benefit__item-sub">
+              契約農園から直接仕入れた高品質豆で、安心して楽しめます。
+            </p>
+          </li>
+          <li class="benefit__item">
+            <p class="benefit__item-title">好みに合わせた焙煎</p>
+            <p class="benefit__item-sub">
+              ３種類の豆それぞれに浅煎り・中深煎り・深煎りをご用意
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ⑥ お客様の声セクション -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <!-- 見出し・本文 -->
+        <h2 class="section__title testimonials__title">
+          お客様から、喜びの声が<br class="sp-only" />届いています
+        </h2>
+
+        <div class="testimonials__area">
+          <ul class="testimonials__list">
+            <li class="testimonials__item">
+              <div class="testimonials__header">
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="/assets/icons/section6/review01_sp.svg"
+                  />
+                  <img
+                    src="/assets/icons/section6/review01_pc.svg"
+                    alt="利用者のイメージ"
+                    class="testimonials__avatar"
+                  />
+                </picture>
+                <div class="testimonials__meta">
+                  <p class="testimonials__name">Aさん</p>
+                  <p class="testimonials__date">2026/04/09</p>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                帰宅後のリラックスタイムに最適です。香りも味も大満足！
+              </p>
+            </li>
+
+            <li class="testimonials__item">
+              <div class="testimonials__header">
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="/assets/icons/section6/review02_sp.svg"
+                  />
+                  <img
+                    src="/assets/icons/section6/review02_pc.svg"
+                    alt="利用者のイメージ"
+                    class="testimonials__avatar"
+                  />
+                </picture>
+                <div class="testimonials__meta">
+                  <p class="testimonials__name">Bさん</p>
+                  <p class="testimonials__date">2026/04/05</p>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                シーズンごとに豆の種類が変わり、飽きずに楽しめます。
+              </p>
+            </li>
+
+            <li class="testimonials__item">
+              <div class="testimonials__header">
+                <picture>
+                  <source
+                    media="(max-width:767px)"
+                    srcset="/assets/icons/section6/review03_sp.svg"
+                  />
+                  <img
+                    src="/assets/icons/section6/review03_pc.svg"
+                    alt="利用者のイメージ"
+                    class="testimonials__avatar"
+                  />
+                </picture>
+                <div class="testimonials__meta">
+                  <p class="testimonials__name">Cさん</p>
+                  <p class="testimonials__date">2026/04/01</p>
+                </div>
+              </div>
+              <p class="testimonials__text">
+                カフェインを気にせず、夜も安心してコーヒーを楽しめるのが嬉しいです
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ⑤ 料金セクション -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2 class="section__title pricing__title">
+          春の生活応援<br class="sp-only" />キャンペーン中
+        </h2>
+
+        <div class="pricing__cards">
+          <!-- 初めての方 -->
+          <article class="pricing__card">
+            <h3 class="pricing__card-title">初めての方</h3>
+            <p class="pricing__label">初回限定</p>
+            <p class="pricing__price">100g<span>900円</span></p>
+            <p class="pricing__note">送料込み</p>
+          </article>
+
+          <!-- 定期便ご希望の方 -->
+          <article class="pricing__card pricing__card--recommended">
+            <h3 class="pricing__card-title">定期便ご希望の方</h3>
+            <p class="pricing__label">月額定期便</p>
+            <p class="pricing__price">100g × 3袋<span>2,400円</span></p>
+            <p class="pricing__note">送料込み</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section-cta">
+      <div class="cta">
+        <p class="cta__text">まずは初回から気軽にお試しできます</p>
+        <a class="btn btn--shadow" href="#">初回900円で試す</a>
+        <div class="cta__note">※いつでも解約OK</div>
+      </div>
+    </section>
+  </body>
+</html>
